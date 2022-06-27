@@ -11,11 +11,11 @@ export function Footer() {
         <p>Bravo Milano - All rights reserved</p>
       </div>
       <div className="flex gap-4">
-        <a href="#" className="flex gap-2 hover:text-orange-500">
+        <a href="https://www.youtube.com/channel/UCNlDA1JfnXh3QENDwVp1fuA" className="flex gap-2 hover:text-orange-500" target="_blank" title="Bravo Youtube Channel">
           <YoutubeLogo size={24} />
           Bravo Youtube Channel
         </a>
-        <a href="#" className="flex gap-2 hover:text-orange-500">
+        <a href="https://instagram.com/bravomilanoofficial" className="flex gap-2 hover:text-orange-500" target="_blank" title="Bravo on Instagram">
           <InstagramLogo size={24} />
           Bravo on Instagram
         </a>
