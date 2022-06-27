@@ -1,3 +1,4 @@
+import { InstagramLogo, YoutubeLogo } from "phosphor-react";
 import { LogoFooter } from "./LogoFooter";
 
 export function Footer() {
@@ -7,11 +8,18 @@ export function Footer() {
         <a href="#">
           <LogoFooter />
         </a>
-        <p className="text-gray-300">Rocketseat - Todos os direitos reservados</p>
+        <p>Bravo Milano - All rights reserved</p>
       </div>
-      <a href="#">
-        <p className="text-gray-300">Políticas de privacidade</p>
-      </a>
+      <div className="flex gap-4">
+        <a href="#" className="flex gap-2 hover:text-orange-500">
+          <YoutubeLogo size={24} />
+          Bravo Youtube Channel
+        </a>
+        <a href="#" className="flex gap-2 hover:text-orange-500">
+          <InstagramLogo size={24} />
+          Bravo on Instagram
+        </a>
+      </div>
     </footer>
   )
 }

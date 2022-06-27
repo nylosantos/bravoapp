@@ -5,7 +5,7 @@ import { useCreateSubscriberMutation } from "../graphql/generated";
 import { LogoBravo } from "../components/LogoBravo";
 
 
-export function Subscribe() {
+export function Subscribed() {
   const navigate = useNavigate()
 
   const [name, setName] = useState('');
@@ -21,7 +21,7 @@ export function Subscribe() {
         email,
       }
     })
-    navigate('/subscribed')
+    navigate('/event')
   }
 
   return (
@@ -39,28 +39,7 @@ export function Subscribe() {
           </p>
         </div>
         <div className="p-8 bg-darkBlue-500 border border-pink-500 rounded">
-          <strong className="text-2xl mb-6 block">SIGN UP FOR EXCLUSIVES</strong>
-          <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
-            <input
-              className="bg-gray-900 rounded px-5 h-14 outline-none"
-              type="text"
-              placeholder="Enter your name"
-              onChange={event => setName(event.target.value)}
-            />
-            <input
-              className="bg-gray-900 rounded px-5 h-14 outline-none"
-              type="email"
-              placeholder="Enter your e-mail address"
-              onChange={event => setEmail(event.target.value)}
-            />
-            <button
-              type="submit"
-              disabled={loading}
-              className="mt-4 text-green-500 border border-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-500 hover:text-gray-700 transition-colors disabled:opacity-50"
-            >
-              Subscribe Bravo
-            </button>
-          </form>
+          <strong className="text-2xl">THANK YOU FOR SUBSCRIBE</strong>
         </div>
       </div>
       <div className="bg-darkBlue-500 bg-opacity-6  0 w-full">
